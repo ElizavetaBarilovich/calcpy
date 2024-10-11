@@ -49,7 +49,7 @@ def calc(text):
         result += 'минус '
         resint = abs(resint)
     if resint >= 0 and resint <= 20:
-        print(revwordDict[str(resint)])
+        result+=revwordDict[str(resint)]
     else:
         for num in range(len(str(resint))):
             mult = int(str(resint)[num]) * int('1' + '0' * (len(str(resint)) - num - 1))
